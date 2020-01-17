@@ -1188,4 +1188,7 @@
         <item>7,1</item>
     </string-array>
 
+    <!-- Whether to artificially interpret all signal strengths as
+         one bar higher than they actually are -->
+    <bool name="config_inflateSignalStrength">true</bool>
 </resources>
