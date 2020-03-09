@@ -17,7 +17,14 @@
 <!-- Camera app resources that may need to be customized
      for different hardware or product builds. -->
 <resources>
+
+	<!-- Opens back camera using openLegacy() and forces api v1 -->
+    <bool name="back_camera_open_legacy">false</bool>
+
+    <!-- Opens front camera using openLegacy() and forces api v1 -->
+    <bool name="front_camera_open_legacy">false</bool>
+
     <!-- Set's manufacturer specific parameters on startup.
          Example: lge-camera=1;cam-mode=0 -->
-    <string name="manufacturer_key_values">hdr-mode=1</string>
+    <string name="manufacturer_key_values">hdr-mode-values=1;hdr-mode=1</string>
 </resources>
