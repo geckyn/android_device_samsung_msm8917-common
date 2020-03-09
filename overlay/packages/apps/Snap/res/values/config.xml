@@ -19,5 +19,5 @@
 <resources>
     <!-- Set's manufacturer specific parameters on startup.
          Example: lge-camera=1;cam-mode=0 -->
-    <string name="manufacturer_key_values">hdr-mode=1</string>
+    <string name="manufacturer_key_values">hdr-mode-values=1;hdr-mode=1;cam_mode=0</string>
 </resources>
