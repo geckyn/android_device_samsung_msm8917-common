@@ -181,6 +181,9 @@ TARGET_LD_SHIM_LIBS := \
     /system/vendor/lib/libsec-ril.so|libshims_ril.so \
     /system/vendor/lib/libsec-ril-dsds.so|libshims_ril.so
 
+# SurfaceFlinger
+TARGET_USE_QCOM_SURFACEFLINGER := true
+
 # Treble
 BOARD_PROPERTY_OVERRIDES_SPLIT_ENABLED := true
 BOARD_VNDK_VERSION := current
