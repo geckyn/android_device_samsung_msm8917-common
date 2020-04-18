@@ -202,7 +202,7 @@ LOCAL_SRC_FILES    := etc/ueventd.qcom.rc
 LOCAL_MODULE_PATH  := $(TARGET_OUT_VENDOR)
 include $(BUILD_PREBUILT)
 
-ifneq ($(filter j4primelte j6primelte,$(TARGET_DEVICE)),)
+ifneq ($(filter j6primelte,$(TARGET_DEVICE)),)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE       := fstab.qcom
