@@ -120,7 +120,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.camera.gyro.android=1 \
     persist.camera.is_type=1 \
     vendor.vidc.enc.narrow.searchrange=1 \
-    persist.vendor.qti.telephony.vt_cam_interface=1
+    persist.vendor.qti.telephony.vt_cam_interface=1 \
+    persist.camera.HAL3.enabled=1
 
 # SurfaceFlinger
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
