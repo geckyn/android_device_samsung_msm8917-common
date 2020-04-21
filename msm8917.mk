@@ -256,7 +256,7 @@ PRODUCT_COPY_FILES += \
 # NFC
 PRODUCT_PACKAGES += \
     android.hardware.nfc@1.1 \
-    android.hardware.nfc@1.1-service \
+    android.hardware.nfc@1.1-service.samsung8917 \
     com.android.nfc_extras \
     com.gsma.services.nfc \
     com.nxp.nfc.nq \
@@ -265,12 +265,12 @@ PRODUCT_PACKAGES += \
     NfcNci \
     Tag \
     vendor.nxp.nxpnfc@1.0 \
-    vendor.nxp.hardware.nfc@1.0-service
+    vendor.nxp.hardware.nfc@1.0-service.samsung8917
     
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/nfc/libnfc-nci.conf:$(TARGET_COPY_OUT_SYSTEM)/etc/libnfc-nci.conf \
-    $(LOCAL_PATH)/nfc/libnfc-nxp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp.conf \
-    $(LOCAL_PATH)/nfc/libnfc-nxp_RF.conf:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc-nxp.conf
+    $(LOCAL_PATH)/nfc/etc/libnfc-nci.conf:$(TARGET_COPY_OUT_SYSTEM)/etc/libnfc-nci.conf \
+    $(LOCAL_PATH)/nfc/etc/libnfc-nxp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp.conf \
+    $(LOCAL_PATH)/nfc/etc/libnfc-nxp_RF.conf:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/libnfc-nxp.conf
     
 # OMX
 PRODUCT_PACKAGES += \
