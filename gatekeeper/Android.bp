@@ -1,0 +1,20 @@
+cc_binary {
+    name: "android.hardware.gatekeeper@1.0-service.samsung8917",
+    defaults: ["hidl_defaults"],
+    relative_install_path: "hw",
+    vendor: true,
+    compile_multilib: "32",
+    init_rc: ["android.hardware.gatekeeper@1.0-service.samsung8917.rc"],
+
+    srcs: ["service.cpp"],
+
+    shared_libs: [
+        "android.hardware.gatekeeper@1.0",
+        "libhardware",
+        "libhidlbase",
+        "libhidltransport",
+        "libutils",
+        "liblog",
+    ],
+
+}
