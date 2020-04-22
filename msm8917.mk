@@ -255,7 +255,7 @@ PRODUCT_COPY_FILES += \
     
 # NFC
 PRODUCT_PACKAGES += \
-    android.hardware.nfc@1.1 \
+    android.hardware.nfc@1.1:32 \
     android.hardware.nfc@1.1-service.samsung8917 \
     com.android.nfc_extras \
     com.gsma.services.nfc \
@@ -264,7 +264,7 @@ PRODUCT_PACKAGES += \
     nqnfcee_access.xml \
     NfcNci \
     Tag \
-    vendor.nxp.nxpnfc@1.0 \
+    vendor.nxp.nxpnfc@1.0:32 \
     vendor.nxp.hardware.nfc@1.0-service.samsung8917
     
 PRODUCT_COPY_FILES += \
