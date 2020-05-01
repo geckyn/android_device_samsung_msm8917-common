@@ -143,7 +143,7 @@ BOARD_FLASH_BLOCK_SIZE := 131072 # (BOARD_KERNEL_PAGESIZE * 64)
 TARGET_USERIMAGES_USE_EXT4 := true
 BOARD_CACHEIMAGE_FILE_SYSTEM_TYPE := ext4
 
-ifneq ($(filter j6primelte,$(TARGET_DEVICE)),)
+ifneq ($(filter j4primelte j6primelte,$(TARGET_DEVICE)),)
     TARGET_COPY_OUT_VENDOR := vendor
 	BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
 endif
@@ -188,7 +188,7 @@ TARGET_PROVIDES_QTI_TELEPHONY_JAR := true
 BOARD_ROOT_EXTRA_FOLDERS := config omr efs
 
 # Recovery
-ifneq ($(filter j6primelte,$(TARGET_DEVICE)),)
+ifneq ($(filter j4primelte j6primelte,$(TARGET_DEVICE)),)
     TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/rootdir/etc/fstab.qcom
 endif
 
